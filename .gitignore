@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Runtime / build artifacts (if users run tools inside workspace)
+node_modules/
+dist/
+build/
+.cache/
+
+# Working files from active runs (optional to commit or ignore)
+*.log
