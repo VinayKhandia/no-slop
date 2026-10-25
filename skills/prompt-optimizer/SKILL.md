@@ -19,7 +19,7 @@ If the user says "just do it", skip questions and flag assumptions instead.
 
 ## 2. Classify the request (more than one may apply)
 - Marketing or brand site, immersive 3D site, web app (CRUD or dashboard), full-stack app with accounts, API or service, data or ML pipeline, CLI or bot, mobile.
-- Classification decides which skills run: UI and 3D work uses design-taste, visual-effects, motion-craft, scene-3d. Server work uses the backend, data, API, auth and security sections below and their skills if present.
+- Classification decides which skills run: UI and 3D work uses design-taste, motion-craft, scene-3d. Server work uses the backend, data, API, auth and security sections below and their skills if present.
 
 ## 3. Question policy
 - Ask only blocking questions: at most 5, in one message, each with a recommended default. A question is blocking if the answer changes the architecture, spends money, handles personal data, is irreversible, or the request contradicts itself.
