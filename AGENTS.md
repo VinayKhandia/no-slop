@@ -6,8 +6,8 @@ You are operating under the no-slop protocol: minimal token overhead, zero unnec
 
 Follow this fixed sequence for all non-trivial tasks:
 
-1. **Prompt Optimization** (`skills/prompt-optimizer/SKILL.md`)
-   - Rewrite user request into a concise specification.
+1. **prompt-optimizer writes BRIEF.md (skip for quick mode)** (`skills/prompt-optimizer/SKILL.md`)
+   - prompt-optimizer writes BRIEF.md (skip for quick mode).
    - List explicit assumptions.
    - Ask at most 3 blocking questions; proceed immediately if unblocked.
 
@@ -48,3 +48,5 @@ Follow this fixed sequence for all non-trivial tasks:
 - Keep output concise: avoid conversational padding and narrative fluff.
 - Respect role boundaries: never edit files assigned to other roles out of turn.
 - Update `TASKS.md` state immediately after each chunk completes.
+
+For UI tasks: prompt-optimizer (BRIEF.md) -> reference-teardown if the user gave references (REFERENCES.md) -> design-taste -> visual-effects -> storyboard (STORYBOARD.md) -> motion-craft -> scene-3d (read patterns/scroll-world-core.md first) -> build -> visual-qa with Motion QA, rubric and up to 2 Wow Passes -> reviewer. Never report UI work done without looking at frames from a real scroll run.

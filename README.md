@@ -59,7 +59,7 @@ All agent actions flow deterministically through [`AGENTS.md`](AGENTS.md):
 
 ## Skills Catalog
 
-Each skill in `skills/` is a modular, self-contained markdown specification with YAML frontmatter, under 150 lines, and strictly free of emojis:
+Each skill in `skills/` is a modular, self-contained markdown specification with YAML frontmatter, strictly free of emojis. Length is fine. Structure for skimming, split large topics into files that load on demand, and keep AGENTS.md short because it is always loaded:
 
 - [`skills/prompt-optimizer/SKILL.md`](skills/prompt-optimizer/SKILL.md): Compresses requests into specs, clarifies assumptions, and caps blocking questions to 3.
 - [`skills/planner/SKILL.md`](skills/planner/SKILL.md): Breaks requirements into atomic chunks and maintains `TASKS.md`.
@@ -121,7 +121,7 @@ Inspect the complete worked example in [`examples/`](examples/):
 
 ## Contributing
 
-We welcome community contributions! Please review [`CONTRIBUTING.md`](CONTRIBUTING.md) for skill line count ceilings, frontmatter schema, and token efficiency guidelines.
+We welcome community contributions! Please review [`CONTRIBUTING.md`](CONTRIBUTING.md) for frontmatter schema, token efficiency, and authoring guidelines.
 
 ## License
 

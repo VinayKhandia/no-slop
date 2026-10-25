@@ -5,6 +5,8 @@ description: Decomposes requirements into atomic task chunks and maintains the c
 
 # Planner
 
+Read BRIEF.md first (written by prompt-optimizer). Derive chunks from its acceptance criteria and keep each chunk tied to one criterion.
+
 Decompose the optimized specification into discrete, manageable execution chunks and record them in `TASKS.md`.
 
 ## Decomposition Rules

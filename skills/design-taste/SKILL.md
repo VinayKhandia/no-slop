@@ -1,58 +1,69 @@
 ---
 name: design-taste
-description: Establishes a cohesive visual, typographic, motion, and optional 3D design direction before any UI code is written.
+description: Use before building any website, landing page, portfolio or UI. Chooses a concept, a design style that fits the product, palette, type and layout. Prevents generic template output.
 ---
 
 # Design Taste
 
-Avoid generic, boilerplate interfaces. For any task involving user interfaces, establish a deliberate design direction before writing any frontend code.
+Run first for any UI task. Output goes to DESIGN.md (max 70 lines). Then load motion-craft, and scene-3d if 3D applies.
 
-## Core Principle
+## 1. Concept
+- One sentence: the central metaphor plus one signature moment only this product could have.
+- If the concept fits any other business, rewrite it.
 
-Never jump straight into writing HTML/CSS or React components without a documented design system. Create a concise `DESIGN.md` in the project root that guides all frontend development.
+## 2. Commit to a style (required)
+- Pick ONE primary style from the table. A second style may add ONE trait only (example: Editorial with a Swiss grid). The primary must be visibly dominant in the first screenshot.
+- Write 2 lines in DESIGN.md on why this style fits the audience and product.
+- Open skills/design-taste/styles/<style>.md and follow that recipe literally for palette family, type, layout, motion, 3D environment, cursor and copy tone. Load only that one file.
+- Choose the background mode on purpose: light, mid-tone or dark. Dark is right only for Dark luxe, nightlife, cinema and some dev tools. Food, hospitality, wellness, kids, fashion and culture default to light or mid-tone.
+- Copy tone follows the style (editorial reads like a magazine, swiss is terse and factual). No lab, telemetry or HUD jargon unless the product is technical.
 
-## Design Decisions Checklist
+| Style | Best for | Signature traits |
+|---|---|---|
+| Editorial | cafes, fashion, magazines, portfolios | huge serif/grotesk headlines, image-text overlap, captions, numbered sections |
+| Swiss / International | agencies, tools, architecture | strict grid, flush-left type, 2 colors, big numerals, lots of white |
+| Minimalism | premium products, SaaS | one idea per screen, tiny palette, massive spacing, slow motion |
+| Maximalism | festivals, music, creative studios | layered textures, clashing type, dense collage, loud color |
+| Surreal | art, experiences, perfume, games | impossible scale, floating objects, dreamy gradients, distorted perspective |
+| Y2K / Retro-future | youth brands, music, fashion | chrome, bubbles, gradients, pixel/techno type, sticker shapes |
+| Glassmorphism | fintech, dashboards, weather, apps | frosted panels over rich color, soft borders, depth (use sparingly, blur is costly) |
+| Neo-brutalism | startups, indie tools, edgy brands | thick borders, flat hard shadows, raw type, bold flat color |
+| Organic / Tactile | food, wellness, craft, kids | soft shapes, grain, warm tones, clay-like 3D, hand-made feel |
+| Dark luxe | watches, cars, spirits, nightlife | near-black base, one metallic accent, cinematic lighting, slow reveals |
+| Retro-print / Vintage | bakeries, barbers, breweries | paper texture, stamps, limited ink colors, badges |
 
-1. **Concept**: The personality and visual metaphor of the application (e.g., "editorial darkroom", "tactile utilitarian instrument", "warm minimalist archive"). Avoid "generic SaaS card layout".
-2. **Color Palette**: Specify primary, secondary, surface, background, text, and accent colors with explicit hex codes and distinct functional roles. Ensure accessible contrast ratios.
-3. **Typography Pairing**: Select deliberate font pairings (one expressive heading face, one legible body face). Define size, weight, and line-height scale.
-4. **Spacing System**: Enforce a strict spatial grid (typically 4px or 8px base units) for margins, padding, and layout gutters.
-5. **Motion Principles**: Define transition curves, durations (e.g., 150ms for micro-interactions, 300ms for layout transitions), and easing functions. Motion must inform context, not distract.
-6. **Optional 3D / Creative Tech Direction**: Where appropriate to the product concept, evaluate lightweight 3D or dynamic interactive effects (three.js, React Three Fiber, WebGL shaders, GSAP scroll-triggered animations). Specify whether 3D enhances the narrative or should be omitted to maintain lightweight performance.
+Selection rules:
+- Match the audience first, trend second.
+- Food/drink/hospitality: lean Editorial, Organic/Tactile, Retro-print or Surreal.
+- Dev tools/data: Swiss, Minimalism, Neo-brutalism.
+- Entertainment/youth: Maximalism, Y2K, Surreal.
+- Luxury: Dark luxe, Minimalism.
 
-## Output Structure: DESIGN.md
+## 3. Palette
+- Start from the palette family in the style recipe, then adapt it to the product's real materials. Max 5 colors with hex and role: background, surface, text, accent, object-contrast.
+- The first palette that comes to mind for the industry is banned (coffee: dark brown + orange + cream, fintech: navy + teal, fitness: black + neon). Use the second or third idea.
+- The 3D hero is the brightest or most saturated thing against the background. Environment colors come from the same palette.
+- About 60% background, 30% surface and text, 10% accent.
+- Banned: black background + single orange or blue accent, purple-blue gradients, pure #000 and #fff.
+- Text contrast at least 4.5:1. Squint test: you should still see three distinct zones (background, object, text).
 
-Generate a concise `DESIGN.md` following this structure:
+## 4. Typography
+- One display font and one body font from Google Fonts. Name both.
+- Banned as display: Inter, Roboto, Arial, system-ui.
+- Display size fluid with clamp(), hero at least 8vw on desktop. Mix scale boldly (tiny labels next to giant headlines).
 
-```markdown
-# Design Direction
+## 5. Layout
+- Asymmetry, overlap, big whitespace or deliberate density (per style).
+- Never repeat a three-equal-cards row. Each section uses a different layout idea.
+- Content sits over the 3D scene, never in a separate boring block.
 
-## Concept
-[1-2 sentences on visual identity and user feeling]
+## 6. DESIGN.md format
+Concept / Signature moment / Style (primary, secondary, why) / Palette table / Fonts / Section list with layout + motion idea per section / zones per section (object side, text side).
 
-## Palette
-- Background: #XXXXXX (purpose)
-- Surface: #XXXXXX (purpose)
-- Text Primary: #XXXXXX (purpose)
-- Text Secondary: #XXXXXX (purpose)
-- Accent: #XXXXXX (purpose)
-- Border / Muted: #XXXXXX (purpose)
-
-## Typography
-- Headings: [Font family, weights, scale]
-- Body / Mono: [Font family, weights, scale]
-
-## Spacing & Layout
-- Grid unit: [e.g., 4px / 8px]
-- Layout max-width and container padding
-
-## Motion & Interaction
-- Hover / Focus transitions: [duration + ease]
-- Page / Modal entrance: [duration + ease]
-
-## 3D & Advanced Effects
-- Direction: [None | Three.js | GSAP | Canvas]
-- Purpose: [How it serves the product concept without bloating bundle size]
-```
-
-The frontend role must adhere strictly to `DESIGN.md`.
+## 7. Final check
+- [ ] Style chosen with a reason, max two.
+- [ ] Palette has no banned defaults.
+- [ ] Concept is specific.
+- [ ] motion-craft and scene-3d checks also pass (if applicable).
+- [ ] Style recipe file was loaded and followed
+- [ ] Background mode chosen on purpose

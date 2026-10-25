@@ -7,14 +7,14 @@ Thank you for helping keep AI-assisted software development structured, token-ef
 `no-slop` is an open-source, markdown-only framework. We operate under three non-negotiable principles:
 
 1. **Zero Runtime Dependencies**: No Node.js scripts, no Python daemons, no custom MCP servers. All logic is expressed through deterministic markdown instructions that any AI agent can understand and follow.
-2. **Strict Token Frugality**: Every word and header added consumes context window tokens. Keep instructions crisp, direct, and under specified line limits.
+2. **Strict Token Frugality**: Every word and header added consumes context window tokens. Keep instructions crisp and direct.
 3. **Teach the Human**: AI coding shouldn't be a black-box code generator; it should level up the human engineer pairing with it.
 
 ## Contribution Guidelines
 
 ### 1. Skill Guidelines (`skills/<name>/SKILL.md`)
 - Every skill must have valid YAML frontmatter containing `name` and `description`.
-- Keep the entire body of each skill under 150 lines.
+- Length is fine. Structure for skimming, split large topics into files that load on demand, and keep AGENTS.md short because it is always loaded.
 - **NO EMOJIS** anywhere in skill files. Emojis waste context tokens and can degrade prompt steerability across smaller LLMs.
 - Skills must be self-contained and support sequential execution if the user's tool does not support multi-agent concurrency.
 
@@ -23,7 +23,6 @@ Thank you for helping keep AI-assisted software development structured, token-ef
 - Prevent scope creep between frontend, backend, database, api, and flex specialists.
 
 ### 3. Agent Entry Point (`AGENTS.md`)
-- Must remain under 120 lines.
 - Defines the canonical workflow:
   `prompt-optimizer` -> `planner` -> (`design-taste` if UI) -> `orchestrator` -> `diff-guard` on every edit -> `reviewer` loop -> `teach-mode` note per chunk.
 
@@ -36,7 +35,5 @@ Thank you for helping keep AI-assisted software development structured, token-ef
 Before submitting a PR:
 - [ ] No emojis in `skills/` or `AGENTS.md`.
 - [ ] Frontmatter in `skills/*/SKILL.md` is valid YAML.
-- [ ] All skills are under 150 lines.
-- [ ] `AGENTS.md` is under 120 lines.
 - [ ] Relative links in `README.md` and documentation resolve properly.
 - [ ] Tested in at least one supported AI environment (Claude, Codex, Antigravity, or Cursor).

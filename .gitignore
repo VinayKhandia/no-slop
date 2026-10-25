@@ -13,6 +13,10 @@ node_modules/
 dist/
 build/
 .cache/
+.qa/
+
+# Ensure 3D model assets are tracked
+!assets/*.glb
 
 # Working files from active runs (optional to commit or ignore)
 *.log

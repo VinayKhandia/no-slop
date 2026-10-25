@@ -43,3 +43,6 @@ Review every chunk change against five pillars:
 
 Status: [Approved | Requires Remediation | Escalated after 3 loops]
 ```
+
+For UI work, also check: only transform/opacity animated on scroll, one shared animation loop, no large backdrop-filter, no per-frame allocations, 3D fallback exists.
+Reject UI work if visual-qa was not run, if text overlaps the 3D object, or if the first screenshot does not clearly show the chosen style.
