@@ -72,3 +72,6 @@ Mode, project type, a five-line summary of the brief, the assumptions list. Ask 
 - [ ] Apps with users or storage have data, API and auth sections.
 - [ ] Assumptions, risks and open questions (with defaults) are listed.
 - [ ] A stranger could build from this brief without asking anything.
+
+## 10. Collaboration handoff
+For UI, 3D or brand work, do not decide taste here. Write BRIEF.md with the functional parts only, and list design inputs in section 9 as open questions. Then hand off to client-collab, which creates DECISIONS.md and runs Gate 0 (assets and references) and the rest. In autopilot, assume and record the assumptions instead.

@@ -14,7 +14,7 @@ Build what the client wants, not what the model thinks looks best. Taste belongs
 
 ## 1. How to pause (works in any tool)
 - Ask in chat, then END YOUR TURN. Do not build, edit or run anything until the user replies. If the tool has a question widget, use it.
-- At most 3 questions per gate. Each has 2 to 4 labeled options, a recommended default marked "(recommended)", and always an "other / you decide" option. Use plain language about looks and content, never jargon.
+- At most 3 questions per gate (Gate 0 may ask up to 4). Each has 2 to 4 labeled options, a recommended default marked "(recommended)", and always an "other / you decide" option. Use plain language about looks and content, never jargon.
 - Show before asking. For style, type and motion, produce a preview first (section 4) and tell the user how to open it.
 - Never re-ask anything already in DECISIONS.md. If the answer is "you decide", choose, record it as assumed, move on.
 - Keep gate messages short: what you made, what you need, your recommendation.
@@ -63,6 +63,6 @@ Apply the smallest change that satisfies the comment, say what changed in one li
 ## 8. Final check
 - [ ] DECISIONS.md exists and matches what was built.
 - [ ] Each gate was run or explicitly skipped by the user.
-- [ ] No gate asked more than 3 questions.
+- [ ] No gate asked more than 3 questions (Gate 0: 4).
 - [ ] Rejected options never reappeared.
 - [ ] Every asset was supplied by the client or labeled placeholder.

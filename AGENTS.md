@@ -49,4 +49,5 @@ Follow this fixed sequence for all non-trivial tasks:
 - Respect role boundaries: never edit files assigned to other roles out of turn.
 - Update `TASKS.md` state immediately after each chunk completes.
 
-For UI tasks: prompt-optimizer (BRIEF.md) -> reference-teardown if the user gave references (REFERENCES.md) -> design-taste -> storyboard (STORYBOARD.md) -> motion-craft -> scene-3d (read patterns/scroll-world-core.md first) -> build -> visual-qa with Motion QA, rubric and up to 2 Wow Passes -> reviewer. Never report UI work done without looking at frames from a real scroll run.
+For UI tasks: prompt-optimizer (BRIEF.md, functional parts only) -> client-collab (creates DECISIONS.md and runs Gates 0 to 6, pausing for the user) with these skills used inside the gates: asset-intake (Gates 0 and 4), reference-teardown (Gate 0, if references are given), design-taste (Gates 1 and 2), storyboard and motion-craft (Gate 3), scene-3d (Gate 4 onward; read patterns/scroll-world-core.md first), visual-qa with Motion QA and the rubric (Gates 4 to 6) -> reviewer. At a gate: show the preview, ask, END YOUR TURN and wait. If the user says autopilot, or the run is unattended: assume, record in DECISIONS.md, and run only Gate 6. Read DECISIONS.md before every step. Never build the client's product from generated shapes when photos or a model exist.
+
