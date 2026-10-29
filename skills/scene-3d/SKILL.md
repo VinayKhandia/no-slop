@@ -5,6 +5,8 @@ description: Use for landing pages, portfolios, product and brand sites that ben
 
 # Scene 3D
 
+Before building, read references/patterns/scroll-world-core.md and adapt it as the base of every scroll-driven 3D page. Do not write the scroll, ticker and camera loop from scratch.
+
 Load after design-taste and motion-craft. Default ON for landing pages and brand sites. Skip for dashboards and form-heavy tools.
 
 ## 1. Architecture
