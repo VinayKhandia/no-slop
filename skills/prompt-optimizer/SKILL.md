@@ -24,7 +24,7 @@ If the user says "just do it", skip questions and flag assumptions instead.
 ## 3. Question policy
 - Ask only blocking questions: at most 5, in one message, each with a recommended default. A question is blocking if the answer changes the architecture, spends money, handles personal data, is irreversible, or the request contradicts itself.
 - Everything else becomes an assumption listed in BRIEF.md so the user can correct it.
-- Unattended or headless: never block. Assume, flag, continue.
+- Autopilot (only when the user's message contains the literal word "autopilot"): never block. Assume, flag, continue.
 
 ## 4. BRIEF.md (each section as long as it needs, no padding)
 1. Goal and success: the outcome in a paragraph, who uses it, what done looks like, and acceptance criteria written as testable statements.

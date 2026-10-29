@@ -14,7 +14,7 @@ Load after design-taste and motion-craft. Default ON for landing pages and brand
 - Each page section maps to a range of s with its own camera position and object state.
 
 ## 2. Immersive environment (required)
-Required. Read skills/scene-3d/enclosures.md and build a closed enclosure the camera sits inside.
+Required. Read references/enclosures.md and build a closed enclosure the camera sits inside.
 
 ## 3. Hero object (required, must match the product)
 Build it procedurally and make it interactive. Examples:
@@ -31,7 +31,7 @@ Interactions (at least 3):
 Add smaller satellite objects (beans, bubbles, shards) with varied depth for parallax.
 
 ## 4. Materials and light
-Read skills/scene-3d/realism.md before building the hero object.
+Read references/realism.md before building the hero object.
 
 ## 5. Performance budget
 - renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5)). antialias true.
@@ -52,10 +52,10 @@ Read skills/scene-3d/realism.md before building the hero object.
 - Decorative orbits, rings and beans must not cross text blocks. Keep them in the object zone or at screen edges.
 
 ## 8. Geometry quality
-Read skills/scene-3d/realism.md before building geometry.
+Read references/realism.md before building geometry.
 
 ## 9. Environment visibility
-Read skills/scene-3d/enclosures.md for environment structure and lighting.
+Read references/enclosures.md for environment structure and lighting.
 
 ## 10. Style link
 The chosen style recipe decides the environment type (tinted room, white cyclorama, patterned maximal room, void with floating shapes, and so on). Follow it.

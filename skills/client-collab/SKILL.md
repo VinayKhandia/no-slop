@@ -9,7 +9,7 @@ Build what the client wants, not what the model thinks looks best. Taste belongs
 
 ## 0. Modes
 - collab (default for UI work): run the gates below.
-- autopilot: the user says "just build it" or "surprise me", or the run is unattended or headless. Make choices from the brief, record them in DECISIONS.md as assumed, and run only Gate 6.
+- autopilot: only when the user's message contains the literal word "autopilot". Make choices from the brief, record them in DECISIONS.md as assumed, and run only Gate 6.
 - The user can switch at any time ("autopilot from here", "ask me again at typography").
 
 ## 1. How to pause (works in any tool)

@@ -14,7 +14,7 @@ Run first for any UI task. Output goes to DESIGN.md (max 70 lines). Then load mo
 ## 2. Commit to a style (required)
 - Pick ONE primary style from the table. A second style may add ONE trait only (example: Editorial with a Swiss grid). The primary must be visibly dominant in the first screenshot.
 - Write 2 lines in DESIGN.md on why this style fits the audience and product.
-- Open skills/design-taste/styles/<style>.md and follow that recipe literally for palette family, type, layout, motion, 3D environment, cursor and copy tone. Load only that one file.
+- Open references/styles/<style>.md and follow that recipe literally for palette family, type, layout, motion, 3D environment, cursor and copy tone. Load only that one file.
 - Choose the background mode on purpose: light, mid-tone or dark. Dark is right only for Dark luxe, nightlife, cinema and some dev tools. Food, hospitality, wellness, kids, fashion and culture default to light or mid-tone.
 - Copy tone follows the style (editorial reads like a magazine, swiss is terse and factual). No lab, telemetry or HUD jargon unless the product is technical.
 

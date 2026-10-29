@@ -25,6 +25,7 @@ Thank you for helping keep AI-assisted software development structured, token-ef
 ### 3. Agent Entry Point (`AGENTS.md`)
 - Defines the canonical workflow:
   `prompt-optimizer` -> `planner` -> (`design-taste` if UI) -> `orchestrator` -> `diff-guard` on every edit -> `reviewer` loop -> `teach-mode` note per chunk.
+- AGENTS.md is the source file; run scripts/sync-rules.sh to refresh rules/AGENTS.md, which the Antigravity plugin loads.
 
 ### 4. Adapter Guidelines (`adapters/<tool>.md`)
 - Provide exact, tested file paths and configuration commands for the target AI coding tool.

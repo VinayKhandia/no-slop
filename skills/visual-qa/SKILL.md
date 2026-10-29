@@ -14,7 +14,7 @@ Run after the build and before the reviewer. Code that reads fine often looks wr
 - Use Playwright with headless Chromium (npx playwright install chromium if missing) in a script at .qa/shots.js. Save screenshots to .qa/. Add .qa/ to .gitignore.
 - For every pinned or stepped sequence, capture the center of EACH step and confirm that step's copy is visible. A blank step is a failed round.
 - Dead-scroll sweep: scroll the whole page in 10% increments and flag any viewport with fewer than 3 visible content elements or no visible motion.
-- Hero zoom: one screenshot at deviceScaleFactor 2 cropped on the hero object for the realism self-check in skills/scene-3d/realism.md.
+- Hero zoom: one screenshot at deviceScaleFactor 2 cropped on the hero object for the realism self-check in skills/scene-3d/references/realism.md.
 - Enclosure check: at least two surfaces of the enclosure are visible in the hero screenshot and the shape can be named.
 
 ## 2. Inspect every screenshot

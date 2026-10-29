@@ -49,5 +49,28 @@ Follow this fixed sequence for all non-trivial tasks:
 - Respect role boundaries: never edit files assigned to other roles out of turn.
 - Update `TASKS.md` state immediately after each chunk completes.
 
-For UI tasks: prompt-optimizer (BRIEF.md, functional parts only) -> client-collab (creates DECISIONS.md and runs Gates 0 to 6, pausing for the user) with these skills used inside the gates: asset-intake (Gates 0 and 4), reference-teardown (Gate 0, if references are given), design-taste (Gates 1 and 2), storyboard and motion-craft (Gate 3), scene-3d (Gate 4 onward; read patterns/scroll-world-core.md first), visual-qa with Motion QA and the rubric (Gates 4 to 6) -> reviewer. At a gate: show the preview, ask, END YOUR TURN and wait. If the user says autopilot, or the run is unattended: assume, record in DECISIONS.md, and run only Gate 6. Read DECISIONS.md before every step. Never build the client's product from generated shapes when photos or a model exist.
+## UI, site and app builds: gate protocol
+
+Applies when the user asks for a new website, landing page, 3D or motion-heavy UI, or a new app. For small edits, fixes and questions do not run this workflow: make the minimal change (diff-guard) and stop.
+
+Precedence: these rules win over any other rule or plugin that says to decompose, dispatch sub-agents or start building immediately. Before Gate 0 is approved, do not dispatch sub-agents and do not write project files other than BRIEF.md and DECISIONS.md.
+
+Modes:
+- collab (default): stop at every gate below.
+- autopilot: only when the user's message contains the exact word "autopilot". Record assumptions in DECISIONS.md and run Gate 6 only. Never infer autopilot from a detailed prompt, a long task, or the user being away.
+
+What "stop" means: your entire reply at a gate is what you made (the preview path), your questions, and nothing else. If you have a tool that pauses and asks the user, use it. Otherwise ask in chat. Make no further tool calls in that turn. Continue only after the user answers. Record current_gate and gate_status (pending_user or approved) at the top of DECISIONS.md.
+
+| Gate | Name | Before it, you may | You ask | To continue |
+| 0 | Intake | read the request, inspect assets/, write BRIEF.md and DECISIONS.md | assets, references, amount of 3D | user answers |
+| 1 | Direction | build previews/direction.html | pick or mix of 3 directions | user picks |
+| 2 | Type and color | build previews/type-color.html | type pairing, palette tweaks | user picks |
+| 3 | Motion and story | build previews/motion.html and STORYBOARD.md | motion personality, scenes | user approves |
+| 4 | Hero | build the hero only | does the look match | user approves |
+| 5 | Sections | build 2 to 3 scenes per pass | feedback per section | user approves each pass |
+| 6 | Final | run visual-qa and the rubric | last changes | user confirms |
+
+Skill order: prompt-optimizer (functional BRIEF only), client-collab (runs the gates), asset-intake, reference-teardown (if references exist), design-taste, storyboard, motion-craft, scene-3d, visual-qa, reviewer.
+
+Always: read DECISIONS.md before every step and never re-ask a recorded answer. Use the client's photos and models for the product and never substitute a generated shape when assets exist. Never report UI work done without screenshots or frames you have looked at. Sub-agents may be used only after Gate 3 is approved, for independent files, never for decisions that belong to a gate.
 
