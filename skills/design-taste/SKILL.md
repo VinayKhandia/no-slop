@@ -47,6 +47,8 @@ Selection rules:
 - Banned: black background + single orange or blue accent, purple-blue gradients, pure #000 and #fff.
 - Text contrast at least 4.5:1. Squint test: you should still see three distinct zones (background, object, text).
 
+Names are not palette briefs. A brand or product name (Noir, Sunrise, Ember, Forest) suggests a color; that is the first idea and is never the default. Gates 1 and 2 always offer three palettes, labeled: Literal (what the name suggests), Opposite (a contrasting mode or hue family), and Unexpected (derived from the product's real materials or setting). At least one of the three must have a light or mid-tone background unless the user asked for dark. Never mark the Literal one as recommended. At Gate 1 also ask the darkness dial in one line (1 light to 5 dark).
+
 ## 4. Typography
 - One display font and one body font from Google Fonts. Name both.
 - Banned as display: Inter, Roboto, Arial, system-ui.
