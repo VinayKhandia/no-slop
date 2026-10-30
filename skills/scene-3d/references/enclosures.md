@@ -9,6 +9,7 @@ Required for scene-3d. The camera is INSIDE a closed shape. At least two surface
 - Icosahedron, octahedron or dodecahedron: tech, crystal, abstract. Flat faces in 3 to 4 palette colors, edges lit.
 - Torus interior: cycles, subscriptions, loops.
 - Half-dome greenhouse or arch alcove: nature, craft, wedding styles.
+- Spring/helix room: see patterns/helix-room.md
 The style recipe's "3D environment" line suggests a shape. Follow it unless the product clearly needs another.
 
 ## Build rules

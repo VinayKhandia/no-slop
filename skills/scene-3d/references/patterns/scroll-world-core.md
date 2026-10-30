@@ -1,5 +1,7 @@
 # Pattern: scroll world core (one ticker, damped scroll, camera on a path)
 
+Scroll values must go through fluid-scroll.md (layered damping), never raw scrollY.
+
 Use as the base of every scroll-driven 3D page. Adapt, do not rewrite. Verify that every CDN URL loads, and pin current stable versions.
 
 ## HTML
