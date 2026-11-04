@@ -7,8 +7,7 @@ MIT licensed. No runtime, no dependencies. Everything is Markdown the agent read
 ## Status
 
 - Tested on: Antigravity.
-- Manifests included, not yet tested: Claude Code.
-- Planned: Codex.
+- Manifests included, not yet tested: Claude Code and Codex.
 - Output quality depends heavily on the model you run it with. Weaker models skip steps or build shallow results. This is a work in progress, not a guarantee.
 
 ## What it does
@@ -48,9 +47,9 @@ Restart the agent panel, then check that no-slop skills appear in Customizations
 
 The manifests follow the Claude Code plugin layout, but I have not run them yet. The always-on rules in `rules/AGENTS.md` are not known to load in Claude Code, so the `no-slop-start` skill triggers the gates instead.
 
-### Codex (planned)
+### Codex (untested)
 
-OpenAI documents a plugin layout (root `plugin.json` plus `skills/`) and `codex plugin marketplace add owner/repo`. This repo follows that layout, but Codex support is not tested.
+Manifests are in .codex-plugin/ and .agents/plugins/. The exact marketplace command may differ by version, so check `codex plugin --help`.
 
 ### Other tools
 
