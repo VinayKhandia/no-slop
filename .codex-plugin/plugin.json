@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "no-slop",
+  "version": "0.2.0",
+  "description": "Makes AI coding agents work like a studio with a client: briefs, gated reviews, real assets, storyboarded 3D and motion, visual QA, minimal diffs, and learning notes.",
+  "author": {
+    "name": "Vinay Khandia",
+    "url": "https://github.com/VinayKhandia"
+  },
+  "homepage": "https://github.com/VinayKhandia/no-slop",
+  "repository": "https://github.com/VinayKhandia/no-slop",
+  "license": "MIT",
+  "keywords": [
+    "workflow",
+    "gates",
+    "3d",
+    "design",
+    "minimal-diff"
+  ],
+  "skills": "./skills/",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "No Slop",
+        "shortDescription": "Client-driven gated workflow for AI builders",
+        "developerName": "Vinay Khandia",
+        "category": "Developer Tools"
+      }
+    }
+  }
+}
