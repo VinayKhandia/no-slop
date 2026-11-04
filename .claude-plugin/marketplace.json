@@ -1,0 +1,14 @@
+{
+  "name": "no-slop-marketplace",
+  "owner": {
+    "name": "Vinay Khandia"
+  },
+  "plugins": [
+    {
+      "name": "no-slop",
+      "source": "./",
+      "description": "Makes AI coding agents work like a studio with a client: briefs, gated reviews, real assets, storyboarded 3D and motion, visual QA, minimal diffs, and learning notes.",
+      "version": "0.2.0"
+    }
+  ]
+}

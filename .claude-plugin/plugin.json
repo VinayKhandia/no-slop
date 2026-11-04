@@ -1,0 +1,17 @@
+{
+  "name": "no-slop",
+  "version": "0.2.0",
+  "description": "Makes AI coding agents work like a studio with a client: briefs, gated reviews, real assets, storyboarded 3D and motion, visual QA, minimal diffs, and learning notes.",
+  "author": {
+    "name": "Vinay Khandia"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/VinayKhandia/no-slop",
+  "keywords": [
+    "workflow",
+    "gates",
+    "3d",
+    "design",
+    "minimal-diff"
+  ]
+}
