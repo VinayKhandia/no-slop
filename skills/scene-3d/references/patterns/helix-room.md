@@ -10,7 +10,7 @@ An environment where the camera travels along a helix inside a box or cylinder w
 
 ## Camera Path & Mathematics
 
-- Progress parameter `p` (0 to 1) comes from the damped scroll value (see [fluid-scroll.md](file:///Users/vinaykhandia/projects/no-slop/skills/scene-3d/references/patterns/fluid-scroll.md)).
+- Progress parameter `p` (0 to 1) comes from the damped scroll value (see [fluid-scroll.md](fluid-scroll.md)).
 - Helix formula:
   - `angle = p * turns * Math.PI * 2`
   - `pos = (R * Math.cos(angle), y0 + p * height, R * Math.sin(angle))`
