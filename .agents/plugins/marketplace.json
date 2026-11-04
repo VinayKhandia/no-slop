@@ -1,0 +1,20 @@
+{
+  "name": "no-slop-marketplace",
+  "interface": {
+    "displayName": "No Slop"
+  },
+  "plugins": [
+    {
+      "name": "no-slop",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_FIRST_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
