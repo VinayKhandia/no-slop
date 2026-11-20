@@ -28,15 +28,13 @@ Skills load on demand, so unused ones cost almost no context.
 
 ## Install
 
-### Antigravity (tested)
-
-```
-git clone https://github.com/VinayKhandia/no-slop.git
-mkdir -p ~/.gemini/config/plugins
-rsync -a --exclude .git no-slop/ ~/.gemini/config/plugins/no-slop/
-```
-
-Restart the agent panel, then check that no-slop skills appear in Customizations.
+### Antigravity (tested on one machine)
+Pick one:
+1. CLI (needs the separate agy CLI): agy plugin install https://github.com/VinayKhandia/no-slop
+2. Manual, global (all projects): download or clone this repo and copy the whole folder, without .git, to ~/.gemini/config/plugins/no-slop/ (create the plugins folder if it does not exist).
+3. Manual, one project: copy the folder to .agents/plugins/no-slop/ in that project.
+Then restart Antigravity and check Customizations for the no-slop skills. If it does not appear, run: agy plugin validate --strict <path> and open an issue with the output.
+Note: the agy CLI is a separate install from the Antigravity app; see Antigravity docs. Install steps are from the Antigravity documentation and have only been tested by the author on one machine.
 
 ### Claude Code (untested)
 

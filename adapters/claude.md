@@ -1,3 +1,5 @@
+Manual fallback only. The recommended install is the plugin (see README). Use these steps if you cannot use plugins.
+
 # Claude Setup Adapter
 
 Integrate the `no-slop` workflow into Claude (Claude Projects, Claude Code CLI, or Claude Web).

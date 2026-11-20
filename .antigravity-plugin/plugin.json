@@ -1,0 +1,26 @@
+{
+  "name": "no-slop",
+  "displayName": "No Slop: Client-Driven Studio for AI Builders",
+  "version": "0.2.0",
+  "description": "Makes AI coding agents work like a studio with a client: briefs, gated reviews, real assets, storyboarded 3D and motion, visual QA, minimal diffs, and learning notes.",
+  "author": {
+    "name": "Vinay Khandia",
+    "url": "https://github.com/VinayKhandia"
+  },
+  "homepage": "https://github.com/VinayKhandia/no-slop",
+  "repository": "https://github.com/VinayKhandia/no-slop",
+  "license": "MIT",
+  "keywords": [
+    "workflow",
+    "gates",
+    "3d",
+    "design",
+    "minimal-diff"
+  ],
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Build an immersive 3D landing page for my perfume brand. My product photos are in assets/. Work in collab mode and stop at every gate.",
+    "Build a full-stack app where students upload notes, sign in with Google, and bookmark notes. Write the brief first.",
+    "Change the main button color to red with a minimal diff."
+  ]
+}

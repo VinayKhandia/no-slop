@@ -18,6 +18,11 @@ Build what the client wants, not what the model thinks looks best. Taste belongs
 - Choice gates (1, 2, 3): give 2 to 4 labeled options and an "other / you decide" option. You may mark one option "(recommended)", but never the option that the product name, category or your first idea suggests, and say in one line why you recommend it.
 - Approval gates (4, 5, 6): never mark any option as recommended and never put "approve" first. Options are: "Change something (say what)", "Looks right", "Not close, redo". Ask "what would you change?" before "do you approve?".
 - Every gate message ends with a HOW TO VIEW block: the exact command to start a static server on port 8099 (python3 -m http.server 8099), the full URL of each preview or page (http://localhost:8099/...), and the paths of any saved screenshots. If the user cannot see the thing, do not ask them to judge it.
+  Delivery mode:
+  1. Local mode: if the agent runs on the user's own machine, keep the current localhost:8099 instructions.
+  2. Remote mode: if the agent runs in a cloud sandbox or chat (the user cannot open localhost), never give a localhost link. Deliver each preview as the tool's file/artifact delivery (HTML file or published artifact) and also attach screenshots from previews/shots/.
+  3. If the environment is unknown, ask once: "Can you open http://localhost:8099 on your computer?" and record delivery: local or remote in DECISIONS.md.
+  4. If screenshots cannot be taken (no Playwright), say so and send the HTML file; never claim the user "saw" a preview.
 - Never re-ask anything already in DECISIONS.md. If the answer is "you decide", choose, record it as assumed, move on.
 - Keep gate messages short: what you made, what you need, your recommendation.
 

@@ -1,3 +1,5 @@
+Manual fallback only. The recommended install is the Codex plugin (see README). Use these steps if you cannot use plugins.
+
 # Codex Setup Adapter
 
 Integrate the `no-slop` workflow into OpenAI Codex environments, ChatGPT Advanced Data Analysis / Canvas, or API-driven Codex agents.
