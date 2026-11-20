@@ -42,7 +42,7 @@ Restart the agent panel, then check that no-slop skills appear in Customizations
 
 ```
 /plugin marketplace add VinayKhandia/no-slop
-/plugin install no-slop
+/plugin install no-slop@no-slop-marketplace
 ```
 
 The manifests follow the Claude Code plugin layout, but I have not run them yet. The always-on rules in `rules/AGENTS.md` are not known to load in Claude Code, so the `no-slop-start` skill triggers the gates instead.
